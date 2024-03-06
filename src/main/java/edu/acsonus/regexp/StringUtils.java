@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class StringUtils {
     public static String rewriteInPhp(String str) {
-        Pattern p = Pattern.compile("(\\s*\\&\\s+)([a-zA-Z0-9_]+)(\\(\\\"[a-z0-9_]+\\\"\\))(\\s*\\&\\s+)", Pattern.MULTILINE);
+        Pattern p = Pattern.compile("(\\s*\\&\\s+)([a-zA-Z0-9_]+)(\\(\\\"[a-z0-9_]+\\\"\\))(\\s*\\&\\s*)", Pattern.MULTILINE);
         Matcher m = p.matcher(str);
         StringBuilder builder = new StringBuilder();
         boolean newLine = false;
