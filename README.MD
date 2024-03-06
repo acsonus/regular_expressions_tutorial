@@ -19,6 +19,8 @@ If you copy /paste from the site be sure you do not get additional backslashes
 \\ to escape the characters
 
 Escapes for characters:
+```
 before " there is \\\"
 before ( thre is \\(
 before  [ there is \\[
+```
